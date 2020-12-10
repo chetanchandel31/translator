@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <link rel='stylesheet' href='./style.css'>
+</head>
+<body>
+    <header class='header'>
+        <h1>Fun translator</h1>
+        <h5>speak like pirates, shakespeare and your other favourite characters</h5>
+    </header>
+    <p>Translate your message to 
+        <select id='dropdown'>
+            <option value='shakespeare'>shakespeare</option>
+            <option value='pirate'>pirate</option>
+            <option value='yoda'>yoda</option>
+            <option value='minion'>minion</option>
+            <option value='groot'>groot</option>
+            <option value='doge'>doge</option>
+        </select> language.</p>
+    <textarea class='text-area' id='input' placeholder="Put your message here which you want to convert to banana language."></textarea>
+    <div class='container-btn'>
+        <button class='btn' id='btn-translate'>Translate</button>
+        <button class='btn' id='btn-clear'>clear</button>
+    </div>
+    <p>Translated text appears below.</p>
+    <textarea class='text-area output' id='output' disabled>hello</textarea>
+    <footer class='footer'>
+        <h2>about</h2>
+        <p>this web app uses fun-translation API to convert your message to different languages.</p>
+        <small>usage is restricted to 5 times per hour.</small>
+    </footer>
+    <script src='./index.js'></script>
+</body>
+</html>
