@@ -9,6 +9,7 @@ const constructURL = (input) => {
 }
 
 const translateHandler = () => {
+    outputEl.value = 'translating...';
     fetch(constructURL(inputEl.value)).then(response => response.json()).then(json => {
         outputEl.value = json.contents.translated;
     }).catch(err => {
