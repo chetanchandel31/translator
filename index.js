@@ -14,6 +14,7 @@ const translateHandler = () => {
         outputEl.value = json.contents.translated;
     }).catch(err => {
         alert(`something wrong with the server or per hour limit exhausted. ${err}`);
+        outputEl.value = `please wait for few seconds after clicking on 'Translate'`;
     })
 }
 
